@@ -42,7 +42,7 @@ def spin(token, proxies=None):
 
 
 def process_hold_coin(token, proxies=None):
-    coins = random.randint(30000, 50000)
+    coins = random.randint(700, 1000)
     hold_coin_status = hold_coin(token=token, coins=coins, proxies=proxies)
     if hold_coin_status:
         base.log(f"{base.white}Auto Play Hold Coin: {base.green}Success")
